@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="asociacion_animales" version="0.1.3">
+ <settings>
+  <title>asociación_animales</title>
+  <revision description="created" date="10/23/23" />
+  <author name="Ivan Cordova Alfaro" />
+  <descriptors />
+  <meta_langs>es</meta_langs>
+  <descriptions>
+   <description language="es" />
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="start" name="une" />
+ </sequence>
+ <activities>
+  <activity class="@associations.SimpleAssociation" name="une" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0x66FF66" />
+     </style>
+     <p>Relaciona las imágenes con las palabras</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="18" />
+      <color background="0xFFFF66" />
+     </style>
+     <p>Ganaste</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <color background="0xFFCC33" />
+     </style>
+     <p>Inténtalo nuevamente</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x99FFFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCCCFF" border="true" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="100.0" cellHeight="100.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell image="aguila.jpg" />
+    <cell image="caballo.jpg" />
+    <cell image="cerdo.jpg" />
+    <cell image="tucan.jpg" />
+   </cells>
+   <cells rows="4" cols="1" cellWidth="100.0" cellHeight="100.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell border="true">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0xCCCCFF" />
+     </style>
+     <p>eagle</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0xCCCCFF" />
+     </style>
+     <p>horse</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0xCCCCFF" />
+     </style>
+     <p>pig</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0xCCCCFF" />
+     </style>
+     <p>toucan</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="aguila.jpg" file="aguila.jpg" />
+  <media name="caballo.jpg" file="caballo.jpg" />
+  <media name="cerdo.jpg" file="cerdo.jpg" />
+  <media name="tucan.jpg" file="tucan.jpg" />
+ </mediaBag>
+</JClicProject>
+
